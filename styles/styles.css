@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* nav section style */
+.nav-section{
+    background-color: #1A0B2E;
+    border-bottom: 1px solid white;
+    
+    
+}
+.nav-content{
+    height: 92px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1600px;
+    margin: 0 auto;
+    
+
+}
+.home-bar{
+    
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    color: #FFFFFF;
+    
+}
+.home-bar li{
+    
+    font-size: 16px;
+    
+}
+.logo-content{
+    max-width: 219px;
+    font-weight: 700;
+    font-size: 28px;
+    color: #FFFFFF;
+    
+}
+.logo-content .clr-wave{
+    background: linear-gradient(
+        120deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+        
+}.Subscribe-btn{
+   display: flex;
+   align-items: center;
+   gap: 4px;
+   padding: 12px 16px;
+   border-radius: 999px;
+   border: none;
+   color: #FFFFFF;
+   background: linear-gradient(
+    60deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+   
+   
+}
