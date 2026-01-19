@@ -24,7 +24,7 @@
     
 }
 .nav-content{
-    height: 92px;
+    height: 10vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -74,6 +74,9 @@
    
    
 }
+.hamburger-menu{
+    display: none;
+}
 
 /* hero-section-style */
 .hero-section{
@@ -87,6 +90,8 @@
     color:white;
     
 }
+
+
 .hero-banner-container{
     display: flex;
     flex-direction: column;
@@ -96,14 +101,14 @@
 
 .hero-microphn-img{
     position: relative;
-    width: 350px;
-    height: 350px;
-    margin: 0 auto;
+    width: min(90vw, 350px);
+    aspect-ratio: 1 / 1;
+    
 }
 .hero-microphn-img .badge {
     position: absolute;
-    top: -50px; 
-    right: 10px;    
+    top: -16px; 
+    right: 16px;    
     background-color: #00FF88;
     color: #1A0B2E;
     font-size: 1.2rem;
@@ -124,31 +129,28 @@
     position: absolute;
     z-index: 1;
     width: 120%;
+    max-width: 100%;
     
     
 }
 .microphone-img{
     position: absolute;
     z-index: 2;
-    width: 45%;              
+    width: 45%; 
+    max-width: 100%;            
 }
 .hero-microphn-img .badge{
     z-index: 3;
-}
-.circel-img {
-  animation: rotate 5s linear infinite;
+    border-radius: 90px;
 }
 
-@keyframes rotate {
-  from { transform: translate(-50%, -50%) rotate(0deg);}
-  to { transform: translate(-50%, -50%) rotate(360deg);}
-}
+
 
 
 
 .hero-text-container{
     text-align: center;
-    
+    max-width: 550px;
     
 }
 .hero-text-container h2{
@@ -165,28 +167,33 @@
 .hero-btn{
     margin-top: 24px;
     display: flex;
-    gap: 8px;
     justify-content: center;
+    gap: 8px;
 }
 .spotify-btn{
+    width: 201PX;
    display: flex;
+   justify-content: center;
    align-items: center;
    gap: 8px;
-   padding: 12px 20px;
-   border-radius: 999px;
+   padding: 12.5px 20px;
+   border-radius: 90px;
    border: none;
    color: #FFFFFF;
    background: linear-gradient(
     35deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
 }
-.spotify-btn .circel-img{
-    
+.spotify-btn img{
+    background: transparent;
     size: 20px 20px;
 }
 .Subscribe-btn-2{
-    display: flex;
-    gap: 8px;
-   padding: 12px 20px;
+   width: 147PX;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 8px;
+   padding: 12.5px 20px;
    border-radius: 999px;
    color: #00FF88;
    border-color: #00FF88;
@@ -195,5 +202,54 @@
    
 }
 .Subscribe-btn-2 img{
-    size: 20px;
+    width: 18px;
+    
+    
+    
+}
+
+
+
+@media screen and (max-width: 576px){
+
+    .nav-content{
+        max-width: 80vw;
+        
+    }
+
+    .hero-section{
+        max-width: 100vw;
+
+    }
+    .home-bar{
+        display: none;
+        
+    }
+    .Subscribe-btn{
+        display: none;
+    }
+    .hamburger-menu{
+        display: block;
+    }
+    .hero-microphn-img{
+        width: 200px;
+    }
+
+    .hero-text-container h2{
+        font-size: 2.2rem;
+    }
+
+    .hero-btn{
+        
+        
+    }
+    .hero-section{        
+    }
+    .hero-microphn-img{
+        width: 200px;
+    }
+    .hero-microphn-img .badge {
+        top: -20px;
+        right: -5px;
+    }
 }
