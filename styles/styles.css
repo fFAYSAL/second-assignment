@@ -18,7 +18,8 @@
 /* nav section style */
 .nav-section{
     background-color: #1A0B2E;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgba(138, 86, 115, 0.377);
+    
     
     
 }
@@ -29,6 +30,7 @@
     align-items: center;
     max-width: 1600px;
     margin: 0 auto;
+    
     
 
 }
@@ -71,4 +73,127 @@
     60deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
    
    
+}
+
+/* hero-section-style */
+.hero-section{
+    background-image: url('../B13-A02-TechWave/assets/hero-bg.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    
+}
+.hero-banner-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.hero-microphn-img{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;
+}
+.hero-microphn-img .badge {
+    position: absolute;
+    top: -50px; 
+    right: 10px;    
+    background-color: #00FF88;
+    color: #1A0B2E;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 8px 16px;
+    border-radius: 12px;
+    
+}
+.hero-microphn-img img{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    
+}
+.circel-img{
+    position: absolute;
+    z-index: 1;
+    width: 120%;
+    
+    
+}
+.microphone-img{
+    position: absolute;
+    z-index: 2;
+    width: 45%;              
+}
+.hero-microphn-img .badge{
+    z-index: 3;
+}
+.circel-img {
+  animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+  from { transform: translate(-50%, -50%) rotate(0deg);}
+  to { transform: translate(-50%, -50%) rotate(360deg);}
+}
+
+
+
+.hero-text-container{
+    text-align: center;
+    
+    
+}
+.hero-text-container h2{
+    font-weight: 800;
+    font-size: 3.75em;
+    color: #FFFFFF;
+}
+.hero-text-container p{
+    font-size: 1rem;
+    color: #FFFFFF;
+    opacity: 80%;
+    font-size: 1rem;
+}
+.hero-btn{
+    margin-top: 24px;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+.spotify-btn{
+   display: flex;
+   align-items: center;
+   gap: 8px;
+   padding: 12px 20px;
+   border-radius: 999px;
+   border: none;
+   color: #FFFFFF;
+   background: linear-gradient(
+    35deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+}
+.spotify-btn .circel-img{
+    
+    size: 20px 20px;
+}
+.Subscribe-btn-2{
+    display: flex;
+    gap: 8px;
+   padding: 12px 20px;
+   border-radius: 999px;
+   color: #00FF88;
+   border-color: #00FF88;
+   background: transparent;
+   border-style: solid;
+   
+}
+.Subscribe-btn-2 img{
+    size: 20px;
 }
