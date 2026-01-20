@@ -204,9 +204,68 @@
 .Subscribe-btn-2 img{
     width: 18px;
     
+}
+
+
+
+/* about section style */
+.about-container{
+    background-color: #1A0B2E;
     
     
 }
+
+.about-content{
+    
+    color: #FFFFFF;
+    max-width: 1200px;
+    padding-bottom: 4rem;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 1px solid rgba(146, 137, 137, 0.185);
+    
+}
+
+.about-text-content{
+    padding-top: 20px;
+    font-size: 16px;
+    line-height: 1.7;
+    opacity: 0.8;
+    
+}
+.break-point{
+    padding-top: 40px;
+    opacity: 0.8;
+}
+
+.about-head{
+    font-weight: 700;
+    font-size: 3rem;
+}
+.number-container{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 80px ;
+    text-align: center;
+
+}
+
+.about-number{
+    width: 12vw;
+}
+.number-text{
+    font-size: 3rem;
+    color: #00FF88;
+}
+.about-number p{
+    color: #FFFFFF;
+    opacity: 80%;
+    padding-top: 16px;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
 
 
 
@@ -234,15 +293,17 @@
     .hero-microphn-img{
         width: 200px;
     }
+    .hero-text-container{
 
+      width: 400px;
+    
+    }
+    
+    
     .hero-text-container h2{
-        font-size: 2.2rem;
+        font-size: 2.5rem;
     }
 
-    .hero-btn{
-        
-        
-    }
     .hero-section{        
     }
     .hero-microphn-img{
