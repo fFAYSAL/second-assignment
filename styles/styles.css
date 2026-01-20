@@ -62,7 +62,8 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
         
-}.Subscribe-btn{
+}
+.Subscribe-btn{
    display: flex;
    align-items: center;
    gap: 4px;
@@ -72,9 +73,10 @@
    color: #FFFFFF;
    background: linear-gradient(
     60deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
-   
-   
+    cursor: pointer;
+    
 }
+
 .hamburger-menu{
     display: none;
 }
@@ -170,7 +172,8 @@
     margin-top: 24px;
     display: flex;
     justify-content: center;
-    gap: 8px;
+    gap: 11px;
+    
 }
 .spotify-btn{
     width: 201PX;
@@ -399,6 +402,7 @@
 
 .host-section{
     background-color: #1A0B2E;
+    
 }
 .host-section h3{
     display: flex;
@@ -414,7 +418,7 @@
     align-items: center;
     margin: 0 auto;
     max-width: 1200px;
-    background-color: #351165;
+    background-color: #3511656b;
     padding: 48px 40px;
     gap: 24px;
     border-radius: 20px;
@@ -450,7 +454,7 @@
 }
 .host-icon img{
     width: 30px;
-    border: 1px solid rgba(148, 109, 109, 0.418);
+    border: 1px solid rgba(165, 116, 116, 0.342);
     border-radius: 50%;
     padding: 7px;
     height: 100%;
@@ -461,6 +465,92 @@
 .host-icon img:hover{
     border-color: #00FF88;
   transform: translateY(-2px);
+}
+
+/* footer design */
+
+footer{
+  background-color: #1A0B2E;
+}
+.footer-section{
+    
+    background-image: url(../B13-A02-TechWave/assets/footer-bg.png);
+    
+    background-position: center;
+    width: 100%;
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    
+}
+.footer-logo{
+    font-size: 5rem;
+    text-align: center;
+    
+
+}
+.clr-wave{
+    background: linear-gradient(
+        10deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.company-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-top: 25px;
+}
+.icon-and-name{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon-and-name p{
+    font-size: 1rem;
+    opacity: 60%;
+}
+.rights{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 32px;
+    font-size: 1rem;
+    opacity: 60%;
+
+}
+
+/* hover section */
+.hero-btn{
+  display: flex;
+  gap: 16px;
+  margin-top: 30px;
+}
+
+button{
+  transition: 0.3s ease;
+}
+
+.spotify-btn{
+  background: linear-gradient(135deg,#FB09B4,#9100F8);
+  color: rgb(255, 255, 255);
+}
+
+.spotify-btn:hover{
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 15px 40px rgba(251,9,180,0.4);
+}
+
+.Subscribe-btn-2:hover{
+  background: linear-gradient(135deg,#09fb5a,#9100F8);
+  color: white;
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 15px 40px rgba(17, 251, 9, 0.4);
 }
 
 
@@ -563,5 +653,31 @@
         
     }
 
+
+    .footer-section{
+        
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #1b0b30;
+        
+        padding: 40px 0;
+    }
+    .footer-logo{
+        font-size: 3rem;
+
+    }
+    .company-icon{
+        display: grid;
+        gap: 30px;
+        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 50px;
+        size: 0.9rem;
+    }
+    .icon-and-name{
+        width: 15px;
+        
+    }
 
 }
