@@ -15,6 +15,7 @@
 }
 
 
+
 /* nav section style */
 .nav-section{
     background-color: #1A0B2E;
@@ -83,6 +84,7 @@
     background-image: url('../B13-A02-TechWave/assets/hero-bg.png');
     background-size: cover;
     background-position: center;
+    width: 100%;
     min-height: 90vh;
     display: flex;
     justify-content: center;
@@ -128,7 +130,7 @@
 .circel-img{
     position: absolute;
     z-index: 1;
-    width: 120%;
+    width: 100%;
     max-width: 100%;
     
     
@@ -328,9 +330,73 @@
 
 
 
+/* video card style */
+.Featured-Episodes-section{
+    background-color: #1A0B2E;
+}
+.episode-title{
+    display: flex;
+    justify-content: center;
+    padding-top: 120px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 3rem;
+}
+.Featured-video-container{
+    display: flex;
+    max-width: 1200px;
+    padding-top: 40px;
+    margin: 0 auto;
+    
+    gap: 30px;
+}
+.video-card-box{
+    background-color: #250D44;
+    border-radius: 20px;
+    
+    
+    
+}
+.video-card-title{
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    
+}
+.video-card-title img{
+    width: 20px;
+}
+
+.video-card iframe{
+    border-radius: 20px;
+}
+.time{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 10px;
+    color: #00FF88;
+    font-size: 1rem;
+}
+.video-card-box-title{
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    
+}
+
+.video-card-title p{
+    
+    padding-top: 12px;
+    font-size: 1rem;
+    opacity: 60%;
+    color: #FFFFFF;
+    line-height: 20px;
+}
+
+/* media query for mobile*/
 
 
-/* responsive section */
 
 @media screen and (max-width: 576px){
 
@@ -340,7 +406,11 @@
     }
 
     .hero-section{
-        max-width: 100vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #1b0b30;
+        
         padding: 40px 0;
 
     }
@@ -368,7 +438,8 @@
         font-size: 2.5rem;
     }
 
-    .hero-section{        
+    .hero-section{  
+        width: 100%;      
     }
     .hero-microphn-img{
         width: 200px;
